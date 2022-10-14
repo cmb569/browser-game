@@ -10,26 +10,46 @@ background-size: 1300px;
 }
 
 .button{
-padding-right: 3rem;
-padding-bottom: 2rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
 font-size: 200px;
 color: white;
 background-color: blue;
 border-radius: 100px;
-vertical-align: middle;
+
 
 }
 
-#container{
-    text-align: center;  
-border: 7px solid red;  
-width: 300px;  
-height: 200px;  
-padding-top: 100px;  
+.START{
+
+    text-align: center;
 }
+
+.center-h {
+    display: flex; /* or display:grid */
+    justify-content: center;
+  }
+
+  .center-v {
+    display: flex;
+    align-items: center;
+  }
+
+  .h-500 {
+    height: 700;
+  }
 
 p{
 
     font-size: 300px;
     text-align: center;
+}
+
+h1{
+    text-align: center;
+    text-align-top: 200px;
+    font-size:4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    color:white;
 }

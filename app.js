@@ -30,3 +30,5 @@ it('shows right and wrong buttons', () => {
 
 //clicking wrong advances to next card
 });
+
+////Setting up the function.
