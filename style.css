@@ -9,7 +9,7 @@ background-size: 1300px;
 
 }
 
-#button{
+.button{
 padding-right: 3rem;
 padding-bottom: 2rem;
 font-size: 200px;
@@ -17,6 +17,7 @@ color: white;
 background-color: blue;
 border-radius: 100px;
 vertical-align: middle;
+margin-bottom: 40px;
 }
 
 #container{
