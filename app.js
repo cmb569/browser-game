@@ -1,5 +1,16 @@
-let horizon = window.innerHeight / 1.75
-let heightOfBackground = window.innerHeight-horizon
+main{
 
+    function game{
 
-tile('images/assets/sea-background-01.png', 0, horizon, window.innerWidth/100, heightOfBackground/100)
+if problem one(4==4){
+
+    console.log('X marks the spot')
+}
+else problem one (!4==4){
+console.log('Out to the plank!')
+}
+
+    }
+
+let problem one = 4
+
