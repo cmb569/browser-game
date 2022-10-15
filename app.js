@@ -1,34 +1,46 @@
-main{
+var score = 0;
+document.getElementById("score").innerHTML = +score;
 
-    let problem one = 4
-    function game{
+function correct() {
+alert("X Marks the Spot, that is Correct!")
+++score;
+document.getElementById("score").innerHTML = +score;
 
-if problem one(4==4){
-
-    console.log('X marks the spot')
-}
-else problem one (!4==4){
-console.log('Out to the plank!')
+return true;
 }
 
-    }
+function wrong() {
+alert("TO THE PLANK YOU GO!")
+
+return false;
+}
 
 
-//describe('when answered is true', () => {
-//if answered, then it should show right and wrong buttons
-it('shows right and wrong buttons', () => {
-    const { getByText } = render(<ButtonHolder answeredStartsAs={true}/>);
+var times = 0;
+document.getElementById("count").innerHTML = +score;
 
-    const right = getByText(/right/i);
-    expect(right).toBeInTheDocument();
+function yourname() {
+++times;
+document.getElementById("count").innerHTML = +times;
 
-    const wrong = getByText(/wrong/i);
-    expect(wrong).toBeInTheDocument();
-});
+}
 
-//clicking right advances to next card
+var minutesLabel = document.getElementById("minutes");
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+setInterval(setTime, 1000);
 
-//clicking wrong advances to next card
-});
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
 
-////Setting up the function.
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}

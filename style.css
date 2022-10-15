@@ -41,15 +41,22 @@ border-radius: 100px;
 
 p{
 
-    font-size: 300px;
+    font-size:100px;
     text-align: center;
 }
 
-h1{
+
+img{
+    display: flex;
+    align-items: center;
+}
+
+h2{
     text-align: center;
-    text-align-top: 200px;
-    font-size:4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: brown;
-    color:white;
+    font-size:300px;
+}
+
+#option{
+text-align:center;
+    align-items:center;
 }
