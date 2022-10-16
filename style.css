@@ -20,10 +20,6 @@ border-radius: 100px;
 
 }
 
-.START{
-
-    text-align: center;
-}
 
 .center-h {
     display: flex; /* or display:grid */
@@ -51,12 +47,27 @@ img{
     align-items: center;
 }
 
-h2{
+h1{
     text-align: center;
-    font-size:300px;
+    font-size:500px;
 }
 
-#option{
-text-align:center;
+.option{
+     text-align:center;
     align-items:center;
+    color:white;
+    background-color: rgb(20, 105, 217);
+    padding:2rem;
+    display:inline-table;
+    margin-left: 250px;
+    margin-top: 100px;
+    font-size:50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 100px;
+    
+}
+
+#alert{
+    color:aqua;
 }
