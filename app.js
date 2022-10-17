@@ -1,46 +1,151 @@
-var score = 0;
-document.getElementById("score").innerHTML = +score;
+const question = document.querySelector('#question');
+const choices = Array.from(document.querySelectorAll('.choice-text'));
+const progressText = document.querySelector('#progressText');
+const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progressBarFull');
 
-function correct() {
-alert("X Marks the Spot, that is Correct!")
-++score;
-document.getElementById("score").innerHTML = +score;
+let currentQuestion = {}
+let acceptingAnswers = true
+let score = 0
+let questionCounter = 0
+let availableQuestions = []
 
-return true;
+let questions = [
+{
+    question: 'What does 2+2=?',
+    choice1: '4',
+    choice2: '7',
+    choice3: '3',
+    answer: 1,
+},
+{
+    question: 'What does 5+5=?',
+    choice1: '6',
+    choice2: '3',
+    choice3: '10',
+    answer: 3,
+},
+{
+    question: 'What does 7+2=?',
+    choice1: '5',
+    choice2: '9',
+    choice3: '1',
+    answer: 2,
+},
+{
+    question: 'What does 3+3=?',
+    choice1: '4',
+    choice2: '6',
+    choice3: '3',
+    answer: 2,
+},
+{
+    question: 'What does 9+2=?',
+    choice1: '11',
+    choice2: '3',
+    choice3: '4',
+    answer: 1,
+},
+{
+    question: 'What does 4+4=?',
+    choice1: '2',
+    choice2: '8',
+    choice3: '1',
+    answer: 2,
+},
+{
+    question: 'What does 6+5=?',
+    choice1: '1',
+    choice2: '3',
+    choice3: '11',
+    answer: 3,
+},
+{
+    question: 'What does 8+8=?',
+    choice1: '3',
+    choice2: '5',
+    choice3: '16',
+    answer: 3,
+},
+{
+    question: 'What does 1+1=?',
+    choice1: '2',
+    choice2: '7',
+    choice3: '3',
+    answer: 1,
+},
+{
+    question: 'What does 4+6=?',
+    choice1: '7',
+    choice2: '10',
+    choice3: '5',
+    answer: 2,
+}
+]
+
+const SCORE_POINTS = 100
+const MAX_QUESTIONS = 10
+
+startGame = () => {
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
+    getNewQuestion()
+
 }
 
-function wrong() {
-alert("TO THE PLANK YOU GO!")
+getNewQuestion = () => {
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+        localStorage.setItem('mostRecentScore', score)
 
-return false;
+        return window.location.assign('/end.html')
+    }
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width= `${(questionCounter/MAX_QUESTIONS) * 100}%`
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
 }
 
+choices.forEach(choice =>{
+    choice.addEventListener('click', e =>{
+        if(!acceptingAnswers) return
 
-var times = 0;
-document.getElementById("count").innerHTML = +score;
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
 
-function yourname() {
-++times;
-document.getElementById("count").innerHTML = +times;
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct'){
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+        }, 1000)
+    })
+})
+
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
 
 }
 
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
-
-function setTime(start) {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-}
-
-function pad(val) {
-  var valString = val + "";
-  if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
-  }
-}
+startGame()
