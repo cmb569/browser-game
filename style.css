@@ -16,7 +16,11 @@ border-radius: 100px;
 
 }
 
-
+h1{
+font-family: Trade Winds;
+text-align: center;
+font-size: 100px;
+}
 .center-h {
     display: flex; /* or display:grid */
     justify-content: center;
@@ -43,3 +47,17 @@ img{
     align-items: center;
 }
 
+
+@media screen and (max-width: 768px) {
+    .button{
+        min-width: 20rem;
+    }
+
+    .input{
+        min-width: 20rem;
+    }
+
+    .body{
+        min-width: 20rem;
+    }
+}

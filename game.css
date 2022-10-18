@@ -6,14 +6,19 @@ body{
     
     }
 
+    
 .choice-container{
     display: flex;
-    margin-bottom: 0.8rem;
-    width:100%;
-    border-radius:4px;
+    margin-bottom:20px;
+    margin-left:0px;
+    width:700px;
+    scrollbar-width:300px ;
+    border-radius:40px;
     background: blue;
-    font-size: 3rem;
-    min-width: 80rem;
+    font-size: 2rem;
+    padding: 1px;
+    float:initial;
+    
 }
 
 .choice-container:hover{
@@ -24,14 +29,15 @@ body{
 
 }
 
-.choice-prefix{
-    padding: 1rem 1;
+p.choice-prefix{
     color: white;
+    margin-left:50px;
 }
 
 .choice-text{
     padding: 1rem;
     width: 100%;
+    color: white;
 
 }
 
@@ -43,6 +49,11 @@ body{
     background: linear-gradient(32deg, red, 0%, rgb(248, 116, 116) 100%);
 }
 
+p{
+    text-align: center;
+    color: white;
+}
+
 /* Heads up Display */
 #hud{
     display:flex;
@@ -50,13 +61,22 @@ body{
 
 }
 
+.hud-item-2{
+    background-color: blue;
+}
+
+
 .hud-prefix{
     text-align:center;
-    font-size: 2rem;
+    font-size: 30px;
+    background-color: blue;
 }
 
 .hud-main-text{
     text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: blue;
 }
 
 #progressBar{
@@ -75,53 +95,34 @@ body{
     width:0%
 }
 
-/*End Page CSS */
-.end-form-container {
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    max-width: 30rem;
-}
+.column {
+    float: left;
+    width: 50%;
+  }
 
-input{
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(6, 103, 247, 0.5);
-}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-input::placeholder{
-    color:#aaa;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
 
-#username{
-    margin-bottom: 3rem;
-    width: 100%;
-    outline: none;
-}
-
-#end-text{
-    font-size: 2.4rem;
-    color: #fff;
-    text-align: center;
-}
-
-#saveScoreBtn{
-    border: none;
-}
-
-.fa-home{
-    margin-left: 1rem;
-    font-size: 2rem;
-    color: black;
-}
+  div.row{
+      background-color:blueviolet;
+  }
 
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 782px) {
     .choice-container{
-        min-width: 40rem;
+        width: 500px;
     }
 }
 
