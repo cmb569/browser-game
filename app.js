@@ -9,6 +9,9 @@ let acceptingAnswers = true
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
+let lowscore =('First Mate')
+let averagescore = ('Quartermaster')
+let highscore = ('Captain')
 
 let questions = [
 {
@@ -146,6 +149,15 @@ incrementScore = num => {
     score +=num
     scoreText.innerText = score
 
+}
+
+////////////////////////////////////////
+if (score <= 300) {
+	lowscore = "First Mate";
+} else if(score = 500) {
+	score = "Quartermaster";
+} else {
+	score = "Captain";
 }
 
 startGame()

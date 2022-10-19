@@ -1,8 +1,8 @@
 
 body{
 
-    background-image:url('images/assets/sea-background-01.png');
-    background-size: 1300px;
+    background-image:url('images/assets/sea-background-01-01.png');
+    background-size: 100%;
     
     }
 
@@ -19,8 +19,11 @@ body{
     
     }
 
+.button:hover{
+    background-color:black;
+    }
+
     div.container{
-        background-color: rgb(0, 172, 181);
         align-items:center;
         display: flex; /* or display:grid */
         justify-content: center;
@@ -75,6 +78,14 @@ text-align: center;
 
 }
 
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    font-size:100px;
+    background-color: green;
+    color: white;
+}
+
 button.btn{
     padding-right: 15rem;
     padding-bottom: 2rem;
@@ -84,4 +95,5 @@ button.btn{
     color: white;
     background-color: blue;
     border-radius: 50px;
+    text-align: center;
 }
