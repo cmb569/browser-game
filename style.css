@@ -1,9 +1,11 @@
-body{
 
-background-image:url('images/assets/sea-background-01-01.png');
-background-size: 1800px;
-
-}
+html { 
+    background: url('images/assets/sea-background-01-01.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 .button{
 padding-bottom: 1rem;
