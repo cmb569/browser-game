@@ -1,24 +1,29 @@
 body{
 
-    background-image:url('images/assets/sea-background-01-01.png');
-    background-size: 1300px;
-    font-family: Arial, Helvetica, sans-serif;
+       font-family: Arial, Helvetica, sans-serif;
     
     }
+
+    html { 
+        background: url('images/assets/sea-background-01-01.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
     
 .choice-container{
     display: flex;
     margin-bottom:20px;
-    margin-left:0px;
-    width:700px;
-    scrollbar-width:300px ;
+    margin-left:70px;
+    width:500px;
+    scrollbar-width:280px ;
     border-radius:40px;
     background: blue;
     font-size: 2rem;
     padding: 1px;
     float:initial;
-    
 }
 
 .choice-container:hover{
@@ -112,9 +117,26 @@ p{
     border: 1px solid red;
   }
 
-  div.row{
-      background-color:blueviolet;
+  .maxscreen{
+      background-color: green;
+      color: white;
+      margin-left:100px;
+      font-size: 40px;
+      border-radius: 20px;
+
   }
+
+  .minscreen{
+    background-color: green;
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+    border-radius: 20px;
+
+
+}
+
+  
 
 
 
@@ -124,6 +146,25 @@ p{
     .choice-container{
         width: 500px;
     }
+    h1{
+        margin-top: 50px;
+        font-size: 30px;
+    }
 }
 
+@media screen and (max-width: 1997px){
+
+    img{
+        width: 300px;
+    }
+    .choice-container{
+        margin-top: 0px;
+    }
+
+    h1{
+        margin-top: 50px;
+        
+    }
+ 
+}
 

@@ -7,7 +7,7 @@ background-size: 1800px;
 
 .button{
 padding-bottom: 1rem;
-font-size: 100px;
+font-size: 150px;
 color: white;
 background-color: blue;
 border-radius: 10px;
@@ -59,7 +59,7 @@ img{
 @media screen and (max-width: 768px) {
     .button{
         min-width: 10px;
-        font-size: 50px;
+        font-size: 90px;
     }
 
     .input{

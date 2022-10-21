@@ -9,9 +9,6 @@ let acceptingAnswers = true
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
-let lowscore =('First Mate')
-let averagescore = ('Quartermaster')
-let highscore = ('Captain')
 
 let questions = [
 {
@@ -151,13 +148,29 @@ incrementScore = num => {
 
 }
 
-////////////////////////////////////////
-if (score <= 300) {
-	lowscore = "First Mate";
-} else if(score = 500) {
-	score = "Quartermaster";
-} else {
-	score = "Captain";
+/////////fullscreen button///////////
+var elem = document.getElementById("wholegame");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
 }
+
+////////exit fullscreen button///////
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+  }
+
+
 
 startGame()

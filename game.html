@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="wholegame">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="game.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="wholegame">
       <div id="game" class="justify-center flex-column">
           <div id="hud">
               <div class="hud-item">
@@ -19,6 +19,12 @@
                   <div id="progressBar">
                       <div id="progressBarFull"></div>
                   </div>
+              </div>
+              <div class="hud-timer">
+              </div>
+              <div class="fullscreen">
+                <button id="fullscreen" class="maxscreen" onclick="openFullscreen();">Fullscreen</button>
+                <button id="fullscreen" class="minscreen" onclick="exitFullscreen();"> Exit Fullscreen</button>
               </div>
               <div class="hud-item-2">
                   <p class="hud-prefix">
@@ -30,8 +36,8 @@
               </div>
           </div>
           <div class="row">
-              <div><h1 id="question" style="font-size:70px; display: block; margin-left: auto;margin-right: auto;
-                width: 50%;">What does 2+2=?</h1></div>
+              <div><h1 id="question" style="font-size:90px; background-color:blue;color: white; display: block; margin-left:10px;margin-right: 10px; margin-top: 10px; padding-top: 2px;
+                width: 50%;text-align: center; border-radius: 5px;">What does 2+2=?</h1></div>
             <div class="column" style="margin-left: 90px;"><img src="images/assets/pirate_motion.gif" width="330px" alt="Pirate" /></div>
             <div class="column"></div>
             <div class="choice-container">
