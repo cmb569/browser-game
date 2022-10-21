@@ -1,0 +1,170 @@
+body{
+
+       font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    html { 
+        background: url('images/assets/sea-background-01-01.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+    
+.choice-container{
+    display: flex;
+    margin-bottom:20px;
+    margin-left:70px;
+    width:500px;
+    scrollbar-width:280px ;
+    border-radius:40px;
+    background: blue;
+    font-size: 2rem;
+    padding: 1px;
+    float:initial;
+}
+
+.choice-container:hover{
+    cursor:pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+
+}
+
+p.choice-prefix{
+    color: white;
+    margin-left:50px;
+}
+
+.choice-text{
+    padding: 1rem;
+    width: 100%;
+    color: white;
+
+}
+
+.correct{
+    background: linear-gradient(32deg, green, 0%, rgb(41, 232, 111) 100%);
+}
+
+.incorrect{
+    background: linear-gradient(32deg, red, 0%, rgb(248, 116, 116) 100%);
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+/* Heads up Display */
+#hud{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.hud-item-2{
+    background-color: blue;
+}
+
+
+.hud-prefix{
+    text-align:center;
+    font-size: 30px;
+    background-color: blue;
+}
+
+.hud-main-text{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: blue;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid green;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+#progressBarFull{
+    height: 100%;
+    background: green;
+    width:0%
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
+
+  .maxscreen{
+      background-color: green;
+      color: white;
+      margin-left:100px;
+      font-size: 40px;
+      border-radius: 20px;
+
+  }
+
+  .minscreen{
+    background-color: green;
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+    border-radius: 20px;
+
+
+}
+
+  
+
+
+
+
+
+@media screen and (max-width: 782px) {
+    .choice-container{
+        width: 500px;
+    }
+    h1{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1997px){
+
+    img{
+        width: 300px;
+    }
+    .choice-container{
+        margin-top: 0px;
+    }
+
+    h1{
+        margin-top: 50px;
+        
+    }
+ 
+}
+
