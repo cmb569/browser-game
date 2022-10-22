@@ -14,7 +14,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value
 })
 
-saveScoreBtn = e =>{
+saveScoreBtn = e => {
     e.preventDefault()
 
     const score = {
@@ -27,3 +27,8 @@ saveScoreBtn = e =>{
     highScores.sort((a,b) => {
         return b.score - a.score
     })
+
+    highScores.splice(5)
+
+    localStorage.setItem('/')
+}

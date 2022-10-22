@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="game.css">
 </head>
 <body>
+
   <div class="container" id="wholegame">
       <div id="game" class="justify-center flex-column">
           <div id="hud">
@@ -20,8 +21,19 @@
                       <div id="progressBarFull"></div>
                   </div>
               </div>
+              <div class="time"><span id="timer"></span></div>
+              <div>    <h2 id="demo"></h2>
+
+                <script>
+                const myTimeout = setTimeout(myGreeting, 60000);
+                
+                function myGreeting() {
+                  document.getElementById("demo").innerHTML = "ARGH! TIMES UP MATEY!"
+                }
+                
+                </script></div>
               <div class="button">
-                <input type="button" onclick="window.location.href='index.html'" class="return" value="RETURN"/>
+                <input type="button" onclick="window.location.href='results.html'" class="return" value="RESULTS"/>
               </div>
               <div class="hud-item-2">
                   <p class="hud-prefix">
@@ -49,7 +61,7 @@
               <p class="choice-prefix">C.</p>
                   <p class="choice-text" data-number="3">3</p>
           </div>
-
+          <div id="showscore" class="scoreArea"></div>
           </div>
 
     
