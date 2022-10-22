@@ -177,4 +177,17 @@ function checkSecond(sec) {
   return sec;
 }
 
+///////pop-up message///////
+function showIt() {
+    document.getElementById("hid").style.visibility = "visible";
+  }
+  setTimeout("showIt()", 60000); // after 60 seconds
+
+
+
+  ///////final score ///////
+
+
+ 
+
 startGame()
