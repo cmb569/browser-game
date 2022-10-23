@@ -7,7 +7,7 @@
 
 To play this game, you must answer questions to the math problem which will be based on addition.
 
-You will have 10 questions.
+You will have 20 questions.
 
 Each question is 100 points.
 
@@ -16,3 +16,8 @@ The highest points are 1000 points if you get them all correct.
 If you want to do it over to get better score, you can click replay.
 
 If you are satisfied with the score, go to main menu which will direct you to Title Page.
+
+
+Sources:
+
+1.Youtube: https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2205s

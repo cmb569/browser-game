@@ -188,18 +188,4 @@ function checkSecond(sec) {
 
 
 
-
-
-
-///////pop-up message///////
-function showIt() {
-    document.getElementById("hid").style.visibility = "visible";
-  }
-  setTimeout("showIt()", 60000); // after 60 seconds
-
-
-
-
- 
-
 startGame()
