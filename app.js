@@ -83,11 +83,81 @@ let questions = [
     choice2: '10',
     choice3: '5',
     answer: 2,
+},
+{
+    question: 'What does 9+1=?',
+    choice1: '2',
+    choice2: '10',
+    choice3: '3',
+    answer: 2,
+},
+{
+    question: 'What does 10+1=?',
+    choice1: '2',
+    choice2: '5',
+    choice3: '11',
+    answer: 3,
+},
+{
+    question: 'What does 3+9=?',
+    choice1: '12',
+    choice2: '1',
+    choice3: '5',
+    answer: 1,
+},
+{
+    question: 'What does 10+9=?',
+    choice1: '4',
+    choice2: '1',
+    choice3: '19',
+    answer: 3,
+},
+{
+    question: 'What does 10+10=?',
+    choice1: '20',
+    choice2: '7',
+    choice3: '6',
+    answer: 1,
+},
+{
+    question: 'What does 11+10=?',
+    choice1: '10',
+    choice2: '3',
+    choice3: '21',
+    answer: 3,
+},
+{
+    question: 'What does 3+10=?',
+    choice1: '10',
+    choice2: '13',
+    choice3: '2',
+    answer: 2,
+},
+{
+    question: 'What does 3+17=?',
+    choice1: '5',
+    choice2: '20',
+    choice3: '9',
+    answer: 2,
+},
+{
+    question: 'What does 3+6=?',
+    choice1: '5',
+    choice2: '7',
+    choice3: '9',
+    answer: 3,
+},
+{
+    question: 'What does 10+6=?',
+    choice1: '2',
+    choice2: '4',
+    choice3: '16',
+    answer: 3,
 }
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 10
+const MAX_QUESTIONS = 20
 
 startGame = () => {
     questionCounter = 0

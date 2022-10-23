@@ -18,6 +18,9 @@ If you want to do it over to get better score, you can click replay.
 If you are satisfied with the score, go to main menu which will direct you to Title Page.
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
 Sources:
 
 1.Youtube: https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2205s
+2.Stackoverflow: https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible
