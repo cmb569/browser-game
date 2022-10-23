@@ -1,3 +1,6 @@
+////Quiz//////
+///From Youtube: https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2205s
+///This code organizes questions that tracks points that creates a score.
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -146,7 +149,12 @@ incrementScore = num => {
 
 }
 
+
+
+
+
 //////countdown///////
+
 
 
 document.getElementById('timer').innerHTML =
@@ -163,6 +171,7 @@ function startTimer() {
   if(m<0){
     return
   }
+ 
   
   document.getElementById('timer').innerHTML =
     m + ":" + s;
@@ -177,6 +186,11 @@ function checkSecond(sec) {
   return sec;
 }
 
+
+
+
+
+
 ///////pop-up message///////
 function showIt() {
     document.getElementById("hid").style.visibility = "visible";
@@ -184,8 +198,6 @@ function showIt() {
   setTimeout("showIt()", 60000); // after 60 seconds
 
 
-
-  ///////final score ///////
 
 
  

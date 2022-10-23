@@ -13,6 +13,6 @@ Each question is 100 points.
 
 The highest points are 1000 points if you get them all correct.
 
-If you want to do it over to get better score, you can click play again.
+If you want to do it over to get better score, you can click replay.
 
 If you are satisfied with the score, go to main menu which will direct you to Title Page.

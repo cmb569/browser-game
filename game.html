@@ -9,29 +9,17 @@
 <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <div class="popup-box" id="hid" style="display: block; visibility: hidden">
-        <div class="transparent-layer"></div>
-        <div class="popup-inner" style="">
-            <div class="popup-msg"><h1>Times up Matey!</h1>
-                <p class="finalscore" style="color:black;">0-300 - Deck Boy</p>
-                <p class="finalscore" style="color:black;">400-700 - Pirate Mate</p>
-                <p class="finalscore" style="color:black;">800-1000 - Captain</p>
-            </div>
-        <button class="next-step-btn" onclick="window.location.href='game.html'">REPLAY</button></div>
-    </div>
-
   <div class="container" id="wholegame">
       <div id="game" class="justify-center flex-column">
           <div id="hud">
               <div class="hud-item">
-                  <p id="progressText" class="hud-prefix" style="font-size:20px; background-color: blue; padding:10px;">
+                  <p id="progressText" class="hud-prefix">
                       Question
                   </p>
                   <div id="progressBar">
                       <div id="progressBarFull"></div>
                   </div>
               </div>
-              <div class="time"><span id="timer"></span></div>
               <div class="button">
                 <input type="button" onclick="window.location.href='game.html'" class="return" value="RESTART"/>
               </div>
@@ -48,8 +36,7 @@
               </div>
           </div>
           <div class="row">
-              <div><h1 id="question" style="font-size:50px; background-color:blue;color: white; display: block; margin-left:10px;margin-right: 10px; margin-top: 10px; padding-top: 2px;
-                width: 50%;text-align: center; border-radius: 5px;">What does 2+2=?</h1></div>
+              <div><h1 id="question" class="question">What does 2+2=?</h1></div>
             <div class="column" style="margin-left: 90px;">
                 <img src="images/assets/pirate_motion.gif" width="330px" alt="Pirate" />
                 <img src="images/assets/treasure-07.png" width="200px" alt="Treasure Chest" />
