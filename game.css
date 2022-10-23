@@ -5,11 +5,11 @@ body{
     }
 
     html { 
-        background: url('images/assets/sea-background-01-01.png') no-repeat center center fixed; 
+        background: url('images/assets/pirate_deck-01.png') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: 1770px;
       }
 
     
@@ -80,7 +80,7 @@ p{
 #hud{
     display:flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 20px;
 
 }
 
@@ -113,6 +113,7 @@ p{
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
+    background-color: white;
 
 }
 
@@ -133,22 +134,35 @@ p{
     clear: both;
   }
 
+  .pirate{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
 
-  .return{
+  }
+
+  .treasure{
+    margin-left: 20px;
+    margin-top: 40px;
+
+  }
+
+  .restart{
     padding-bottom: 1rem;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
-    background-color: blue;
+    background-color: purple;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 500px;
     margin-top: 30px;
     }
 
     .return{
         padding-bottom: 1rem;
-        font-size: 30px;
+        font-size: 50px;
         color: white;
-        background-color: blue;
+        background-color: green;
         border-radius: 10px;
         margin-left: 0px;
         margin-top: 30px;
