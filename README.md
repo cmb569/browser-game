@@ -11,9 +11,9 @@ You will have 20 questions.
 
 Each question is 100 points.
 
-The highest points are 1000 points if you get them all correct.
+The highest points are 2000 points if you get them all correct.
 
-If you want to do it over to get better score, you can click replay.
+If you want to do it over to get better score, you can click restart.
 
 If you are satisfied with the score, go to main menu which will direct you to Title Page.
 
@@ -22,5 +22,6 @@ If you are satisfied with the score, go to main menu which will direct you to Ti
 
 Sources:
 
-1.Youtube: https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2205s
-2.Stackoverflow: https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible
+1.“How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial” YouTube, uploaded by Brian Design, 28 Jun. 2020,https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2205s
+
+2.Nima (2013, November 24). Autoplay an audio with HTML5 embed tag while the player is invisible. Message posted to https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible.

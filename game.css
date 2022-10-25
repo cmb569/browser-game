@@ -16,8 +16,8 @@ body{
 .choice-container{
     display: flex;
     margin-bottom:20px;
-    margin-left:40px;
-    width:500px;
+    margin-left:70px;
+    width:700px;
     scrollbar-width:280px ;
     border-radius:40px;
     background: blue;
@@ -169,22 +169,6 @@ p{
         }
 
 
-div.time{
-
-    font-size: 50px;
-    margin-left: 10px;
-    margin-top: 40px;
-    margin-bottom: 70px;
-    background-color: green;
-    padding-right:30px;
-    padding-left: 30px;
-    padding-bottom:0px;
-    padding-top: 10px;
-    text-align: center;
-    border-radius: 20px;
-    color: white;
-}
-
 h2{
     font-size: 30px;
     margin-top: 30px;
@@ -195,58 +179,7 @@ h2{
 
 
 
-/*pop-up message*/
-.popup-box{
-	display: none;
-	position: fixed;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	z-index: 10;
-	top: 0;
-	left: 0;
-}
 
-.popup-inner{
-	max-width: 300px;
-	min-height: 160px;
-	background: white;
-  border-radius: 25px;
-	padding: 15px;
-	margin: auto;
-	top: 25%;
-	position: relative;
-}
-
-
-
-.popup-msg{
-	font-weight: bold;
-	color: black;
-	padding: 20px 20px 0 20px;
-}
-
-.next-step-btn{
-	margin:20px auto 0;
-background: linear-gradient(rgb(204,0,0), rgb(130,0,0));
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015eab', endColorstr='#10276b');
-	border: none !important;
-	padding: 10px 40px !important;
-	color: #fff !important;
-	font-weight: bold;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-.transparent-layer{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: #000000;
-	opacity: 0.3;
-overflow: hidden;
-
-}
 
 
 
