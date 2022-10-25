@@ -24,4 +24,8 @@ Sources:
 
 1.“How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial” YouTube, uploaded by Brian Design, 28 Jun. 2020,https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2205s
 
-2.Nima (2013, November 24). Autoplay an audio with HTML5 embed tag while the player is invisible. Message posted to https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible.
+2.“Linking pages using buttons click event” plus2net, 14 Oct. 2022, https://www.plus2net.com/html_tutorial/button-linking.php.
+
+3.Nima (2013, November 24). Autoplay an audio with HTML5 embed tag while the player is invisible. Message posted to https://stackoverflow.com/questions/20179190/autoplay-an-audio-with-html5-embed-tag-while-the-player-is-invisible.
+
+
