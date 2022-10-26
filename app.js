@@ -146,13 +146,6 @@ let questions = [
     choice2: '7',
     choice3: '9',
     answer: 3,
-},
-{
-    question: 'What does 10+6=?',
-    choice1: '2',
-    choice2: '4',
-    choice3: '16',
-    answer: 3,
 }
 ]
 
